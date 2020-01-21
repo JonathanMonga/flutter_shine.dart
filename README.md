@@ -24,7 +24,7 @@ dependencies:
 import 'package:flutter_shine/flutter_shine.dart';
 ```
 
-### Network giffy dialog
+### Flutter Shine
 
 <img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
 
