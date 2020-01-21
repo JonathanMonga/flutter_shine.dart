@@ -21,34 +21,36 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Shine'),
         ),
-        body: Center(child: FlutterShine(
-          builder: (BuildContext context, ShineShadow shineShadow) {
-            final width = MediaQuery.of(context).size.width;
-            final fontSize = width / 3.5;
+        body: Center(
+          child: FlutterShine(
+            builder: (BuildContext context, ShineShadow shineShadow) {
+              final width = MediaQuery.of(context).size.width;
+              final fontSize = width / 3.5;
 
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Text(
-                  "Shine",
-                  style: TextStyle(
-                      fontSize: fontSize,
-                      color: Colors.white,
-                      shadows: shineShadow.shadows),
-                ),
-                Divider(),
-                Container(
-                  width: 300,
-                  height: 300,
-                  decoration: BoxDecoration(
-                      color: Colors.white, boxShadow: shineShadow.boxShadows),
-                )
-              ],
-            );
-          },
-        )),
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Text(
+                    "Shine",
+                    style: TextStyle(
+                        fontSize: fontSize,
+                        color: Colors.white,
+                        shadows: shineShadow.shadows),
+                  ),
+                  Divider(),
+                  Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.white, boxShadow: shineShadow.boxShadows),
+                  )
+                ],
+              );
+            },
+          ),
+        ),
       ),
     );
   }
