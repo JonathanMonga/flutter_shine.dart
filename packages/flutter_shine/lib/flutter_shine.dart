@@ -1,3 +1,4 @@
+/// Create beautiful shadow
 library flutter_shine;
 
 export 'package:flutter_shine/src/config.dart';
