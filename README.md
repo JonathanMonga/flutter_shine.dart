@@ -57,7 +57,6 @@ FlutterShine(
     },
 ),
 ```
-
 Extremely customizable shadow with a dynamic light positions.
 
 You can customize follows values :

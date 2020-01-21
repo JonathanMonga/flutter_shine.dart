@@ -1,16 +1,76 @@
-# flutter_shine_example
+# Flutter Shine Exemple
 
-Demonstrates how to use the flutter_shine plugin.
+<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
 
-## Getting Started
+```dart
+FlutterShine(
+    builder: (BuildContext context, ShineShadow shineShadow) {
+        return Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+                Text(
+                    "Shine",
+                    style: TextStyle(
+                        fontSize: 100,
+                        color: Colors.white,
+                        shadows: shineShadow.shadows),
+                ),
+                Divider(),
+                Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.white, boxShadow: shineShadow.boxShadows),
+                )
+            ],
+        );
+    },
+),
+```
 
-This project is a starting point for a Flutter application.
+Extremely customizable shadow with a dynamic light positions.
 
-A few resources to get you started if this is your first Flutter project:
+You can customize follows values :
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- number of Steps : The density of the shadow
+- opacity : The opacity of the shadow
+- opacity Power : The opacity power
+- offset : The offset of the shadow
+- offset Power : The offset power
+- blur : The blur of the shadow
+- blur Power : The blur power
+- shadow Color : The color of the shadow
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
+
+```dart
+FlutterShine(
+    [config: Config(shadowColor: Colors.red[300]),]
+    [light: Light(intensity: 1, position: Point(x, y)),]
+    builder: (BuildContext context, ShineShadow shineShadow) {
+        return Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+                Text(
+                    "Shine",
+                    style: TextStyle(
+                        fontSize: 100,
+                        color: Colors.white,
+                        shadows: shineShadow.shadows),
+                ),
+                Divider(),
+                Container(
+                    width: 300,
+                    height: 300,
+                    decoration: BoxDecoration(
+                        color: Colors.white, boxShadow: shineShadow.boxShadows),
+                )
+            ],
+        );
+    },
+),
+```
