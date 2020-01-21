@@ -1,22 +1,11 @@
-import 'package:flutter/services.dart';
+import 'package:flutter_shine/src/config.dart';
+import 'package:flutter_shine/src/controller.dart';
+import 'package:flutter_shine/src/light.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('flutter_shine');
 
-  TestWidgetsFlutterBinding.ensureInitialized();
-
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
-
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
-
-  test('getPlatformVersion', () async {
-    //expect(await FlutterShine.platformVersion, '42');
+  test('checkNullability', () async {
+    assert(await Controller.generateLongShadow(Light(), Config()) != null);
   });
 }
