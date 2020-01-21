@@ -3,7 +3,7 @@
 # Flutter Shine
 
 [![Pub](https://img.shields.io/badge/pub-0.0.1-blue)](https://pub.dev/packages/flutter_shine)
-[![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
+[![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.dart.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
 
 Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
 
@@ -57,6 +57,7 @@ FlutterShine(
     },
 ),
 ```
+
 Extremely customizable shadow with a dynamic light positions.
 
 You can customize follows values :
