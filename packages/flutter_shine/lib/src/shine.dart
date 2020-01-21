@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_shine/src/config.dart';
 import 'package:flutter_shine/src/controller.dart';
@@ -13,19 +11,8 @@ typedef ShineWidgetBuilder = Widget Function(
 class FlutterShine extends StatelessWidget {
   const FlutterShine({
     Key key,
-    this.config = const Config(
-        blur: 35,
-        blurPow: 1,
-        numSteps: 10,
-        offset: 0.5,
-        offsetPow: 2.0,
-        opacity: 0.3,
-        opacityPow: 1.0,
-        shadowColor: Colors.black),
-    this.light = const Light(
-      intensity: 1,
-      position: Point(-100, -100),
-    ),
+    this.config = const Config(),
+    this.light = const Light(),
     this.builder,
   })  : assert(builder != null, "Widget Builder must be not null"),
         super(key: key);
@@ -38,8 +25,9 @@ class FlutterShine extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: Controller.generateLongShadow(light, config),
-      builder: (BuildContext context, AsyncSnapshot<ShineShadow> asyncSnapshot) =>
-          builder(context, asyncSnapshot?.data),
+      builder:
+          (BuildContext context, AsyncSnapshot<ShineShadow> asyncSnapshot) =>
+              builder(context, asyncSnapshot?.data),
     );
   }
 }

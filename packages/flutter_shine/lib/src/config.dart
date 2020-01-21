@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 ///  * offset Power
 ///  * blur
 ///  * blur Power
-///  * shadow RGB
+///  * shadow Color
 class Config {
   final int numSteps;
   final double opacity;
@@ -36,14 +36,14 @@ class Config {
   ///  * blur Power
   ///  * shadow RGB
   const Config(
-      {this.numSteps,
-      this.opacity,
-      this.opacityPow,
-      this.offset,
-      this.offsetPow,
-      this.blur,
-      this.blurPow,
-      this.shadowColor})
+      {this.numSteps = 10,
+      this.opacity = 0.3,
+      this.opacityPow = 1.0,
+      this.offset = 0.5,
+      this.offsetPow = 2.0,
+      this.blur = 35,
+      this.blurPow = 1,
+      this.shadowColor = Colors.black})
       : assert(numSteps > 0.0 && numSteps <= 64.0),
         assert(opacity > 0.0 && opacity <= 1.0),
         assert(opacityPow > 0.0 && opacityPow <= 4.0),

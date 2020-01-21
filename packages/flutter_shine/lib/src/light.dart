@@ -10,5 +10,5 @@ class Light {
   final Point position;
   final double intensity;
 
-  const Light({this.position = const Point(0, 0), this.intensity = 1.0});
+  const Light({this.position = const Point(-100.0, -100.0), this.intensity = 1.0});
 }
