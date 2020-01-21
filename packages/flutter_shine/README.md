@@ -2,7 +2,7 @@
 
 # Flutter Shine
 
-[![Pub](https://img.shields.io/badge/pub-0.0.4-blue)](https://pub.dev/packages/flutter_shine)
+[![Pub](https://img.shields.io/badge/pub-0.0.5-blue)](https://pub.dev/packages/flutter_shine)
 [![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.dart.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
 
 Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
@@ -13,7 +13,7 @@ Add the Package
 
 ```yaml
 dependencies:
-  flutter_shine: ^0.0.4
+  flutter_shine: ^0.0.5
 ```
 
 # ❔ Usage
