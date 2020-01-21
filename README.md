@@ -1,4 +1,4 @@
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/images_1.png" alt="Image 1" height="40%" width="90%"/>
+<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_1.png" alt="Image 1" height="40%" width="90%"/>
 
 # Flutter Shine
 
@@ -26,7 +26,7 @@ import 'package:flutter_shine/flutter_shine.dart';
 
 ### Network giffy dialog
 
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/images_2.png" align = "right" height = "350" alt="Exemple">
+<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
 
 ```dart
 FlutterShine(
