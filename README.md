@@ -1,8 +1,8 @@
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_1.png" alt="Image 1" height="40%" width="90%"/>
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_1.png" alt="Image 1" height="40%" width="90%"/>
 
 # Flutter Shine
 
-[![Pub](https://img.shields.io/badge/pub-0.0.3-blue)](https://pub.dev/packages/flutter_shine)
+[![Pub](https://img.shields.io/badge/pub-0.0.4-blue)](https://pub.dev/packages/flutter_shine)
 [![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.dart.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
 
 Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
@@ -13,7 +13,7 @@ Add the Package
 
 ```yaml
 dependencies:
-  flutter_shine: ^0.0.3
+  flutter_shine: ^0.0.4
 ```
 
 # ❔ Usage
@@ -28,7 +28,7 @@ import 'package:flutter_shine/flutter_shine.dart';
 
 See how easy it is to create a shadow on text and on a container.
 
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_2.png" align = "right" height = "350" alt="Exemple">
 
 ```dart
 FlutterShine(
@@ -71,7 +71,7 @@ You can customize follows values :
 - blur Power : The blur power
 - shadow Color : The color of the shadow
 
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
+<img src="https://raw.githubusercontent.com/JonathanMonga/flutter_shine.dart/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
 
 ```dart
 FlutterShine(
