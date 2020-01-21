@@ -58,40 +58,7 @@ FlutterShine(
 ),
 ```
 
-With dynamic light positions.
-
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
-
-```dart
-FlutterShine(
-    [light: Light(intensity: 1, position: Point(x, y)),]
-    builder: (BuildContext context, ShineShadow shineShadow) {
-        return Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-                Text(
-                    "Shine",
-                    style: TextStyle(
-                        fontSize: 100,
-                        color: Colors.white,
-                        shadows: shineShadow.shadows),
-                ),
-                Divider(),
-                Container(
-                    width: 300,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        color: Colors.white, boxShadow: shineShadow.boxShadows),
-                )
-            ],
-        );
-    },
-),
-```
-
-Extremely customizable shadow.
+Extremely customizable shadow with a dynamic light positions.
 
 You can customize follows values :
 
@@ -104,7 +71,7 @@ You can customize follows values :
 - blur Power : The blur power
 - shadow Color : The color of the shadow
 
-<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_4.gif" align = "right" height = "350" alt="Exemple">
+<img src="https://github.com/JonathanMonga/flutter_shine.dart/blob/master/images/image_3.gif" align = "right" height = "350" alt="Exemple">
 
 ```dart
 FlutterShine(
