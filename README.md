@@ -144,7 +144,7 @@ In order to run the flutter example, you must have Flutter installed. For instal
 
     MIT License
 
-    Copyright (c) 2019 Jonathan Monga
+    Copyright (c) 2020 Jonathan Monga
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
