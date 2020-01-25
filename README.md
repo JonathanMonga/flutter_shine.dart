@@ -140,6 +140,10 @@ In order to run the flutter example, you must have Flutter installed. For instal
 5. Run `flutter packages get`
 6. Run `flutter run`
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/JonathanMonga/flutter_shine.dart.svg)](https://starchart.cc/JonathanMonga/flutter_shine.dart)
+
 # License
 
     MIT License
