@@ -4,6 +4,9 @@
 
 [![Pub](https://img.shields.io/badge/pub-0.0.5-blue)](https://pub.dev/packages/flutter_shine)
 [![Build Status](https://travis-ci.org/JonathanMonga/flutter_shine.dart.svg?branch=master)](https://travis-ci.org/JonathanMonga/flutter_shine)
+<a href="https://github.com/Solido/awesome-flutter">
+   <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
+</a>
 
 Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
 
