@@ -8,6 +8,11 @@
    <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
 </a>
 
+### Show some :heart: and star the repo to support the project
+
+[![GitHub stars](https://img.shields.io/github/stars/JonathanMonga/flutter_shine.dart.svg?style=social&label=Star)](https://github.com/JonathanMonga/flutter_shine.dart) [![GitHub forks](https://img.shields.io/github/forks/JonathanMonga/flutter_shine.dart.svg?style=social&label=Fork)](https://github.com/JonathanMonga/flutter_shine.dart/fork) [![GitHub watchers](https://img.shields.io/github/watchers/JonathanMonga/flutter_shine.dart.svg?style=social&label=Watch)](https://github.com/JonathanMonga/flutter_shine.dart) [![GitHub followers](https://img.shields.io/github/followers/JonathanMonga.svg?style=social&label=Follow)](https://github.com/JonathanMonga)  
+[![Twitter Follow](https://img.shields.io/twitter/follow/jonathan_monga.svg?style=social)](https://twitter.com/jonathan_monga)
+
 Flutter widget inspired by [Shine](https://github.com/bigspaceship/shine.js)
 
 ## Installation
