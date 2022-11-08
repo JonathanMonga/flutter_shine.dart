@@ -1,10 +1,10 @@
 name: flutter_shine
 description: Flutter Shine is a library for pretty shadows, dynamic light positions, extremely customizable shadows, no library dependencies, text or box shadows based on content.
-version: 0.0.5
+version: 1.0.0
 homepage: https://github.com/JonathanMonga/flutter_shine.dart
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <4.0.0'
 
 dependencies:
   flutter:

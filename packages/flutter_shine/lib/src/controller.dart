@@ -21,9 +21,9 @@ class Controller {
     List<Shadow> shadows = List<Shadow>.generate(config.numSteps, (int index) {
       double ratio = index / config.numSteps;
 
-      double ratioOpacity = math.pow(ratio, config.opacityPow);
-      double ratioOffset = math.pow(ratio, config.offsetPow);
-      double ratioBlur = math.pow(ratio, config.blurPow);
+      double ratioOpacity = math.pow(ratio, config.opacityPow) as double;
+      double ratioOffset = math.pow(ratio, config.offsetPow) as double;
+      double ratioBlur = math.pow(ratio, config.blurPow) as double;
 
       double opacity =
           light.intensity * math.max(0, config.opacity * (1.0 - ratioOpacity));
