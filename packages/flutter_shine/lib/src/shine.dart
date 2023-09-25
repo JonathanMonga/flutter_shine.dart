@@ -5,8 +5,7 @@ import 'package:flutter_shine/src/light.dart';
 import 'package:flutter_shine/src/shine_shadow.dart';
 
 /// The function use to create widgets
-typedef ShineWidgetBuilder = Widget Function(
-    BuildContext context, ShineShadow shineShadow);
+typedef ShineWidgetBuilder = Widget Function(BuildContext context, ShineShadow? shineShadow);
 
 /// Widget to create custom, managed, light-based shadow in a very simple way.
 ///
@@ -18,12 +17,11 @@ typedef ShineWidgetBuilder = Widget Function(
 ///
 class FlutterShine extends StatelessWidget {
   const FlutterShine({
-    Key key,
+    Key? key,
     this.config = const Config(),
     this.light = const Light(),
-    this.builder,
-  })  : assert(builder != null, "Widget Builder must be not null"),
-        super(key: key);
+    required this.builder,
+  }) : super(key: key);
 
   final Config config;
   final Light light;
@@ -33,9 +31,7 @@ class FlutterShine extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: Controller.generateLongShadow(light, config),
-      builder:
-          (BuildContext context, AsyncSnapshot<ShineShadow> asyncSnapshot) =>
-              builder(context, asyncSnapshot?.data),
+      builder: (BuildContext context, AsyncSnapshot<ShineShadow> asyncSnapshot) => builder(context, asyncSnapshot.data),
     );
   }
 }
